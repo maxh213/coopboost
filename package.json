@@ -18,6 +18,12 @@
     "dotenv": "^4.0.0",
     "mongoose": "^4.11.13",
     "sleep-promise": "^2.0.0",
-    "twitter": "^1.7.1"
-  }
+    "twitter": "^1.7.1",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
